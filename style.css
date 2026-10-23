@@ -8,3 +8,25 @@ img{max-width:100%}
 @media(max-width:900px){header{padding:18px 5%;flex-wrap:wrap;gap:16px}nav{gap:12px 18px;flex-wrap:wrap}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 6% 42px}.hero-visual{min-height:400px}.chips{margin-top:34px}.section-heading{align-items:start}.services{gap:15px}}
 @media(max-width:600px){.notice{font-size:9px;letter-spacing:.7px;line-height:1.5;padding:9px 12px}header{display:block;padding:18px 5%}.brand{display:inline-block;font-size:22px}.brand small{font-size:8px;letter-spacing:2px}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:18px;border-top:1px solid #dce2d7}nav a{padding:12px 6px;border-bottom:1px solid #dce2d7;font-size:12px}.hero-copy{padding:48px 6% 40px}.hero h1{font-size:clamp(39px,10vw,55px);letter-spacing:-.8px;margin:19px 0}.kicker{font-size:10px;letter-spacing:1.8px}.intro{font-size:15px;line-height:1.7}.actions{display:grid;gap:16px;margin-top:25px}.actions .btn{width:100%;justify-content:center;text-align:center;padding:16px}.subtle{text-align:center}.chips{gap:10px 16px;margin-top:30px;font-size:11px}.hero-visual{min-height:280px;background-position:center}.visual-caption{font-size:9px;letter-spacing:1.2px;right:4%;bottom:5%}.section{padding:56px 5%}.section-heading h2{font-size:38px}.section-heading>p{font-size:14px}.services{grid-template-columns:1fr;gap:18px}.services article img{height:210px}.services article .service-body{padding:20px 22px 25px}.inspiration{grid-template-columns:1fr}.inspiration>div:first-child{padding:55px 6%}.inspiration h2{font-size:40px}.inspiration-art{min-height:270px}.contact{padding:60px 6%}.contact h2{font-size:39px}.contact .btn{width:100%;max-width:360px;justify-content:center;text-align:center}footer{padding:32px 6%;gap:14px}footer p{overflow-wrap:anywhere}}
 @media(max-width:360px){.hero h1{font-size:36px}.section-heading h2{font-size:34px}.brand{font-size:20px}}
+
+/* Navigation mobile compacte — version finale */
+.mobile-menu-toggle{display:none}
+@media(max-width:700px){
+ header{display:flex;flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:15px 5%;gap:8px}
+ .brand{font-size:clamp(19px,5vw,24px);line-height:1.1}.brand small{margin-top:5px}
+ .mobile-menu-toggle{display:inline-flex;align-items:center;gap:8px;cursor:pointer;background:#153d30;color:#fff;border:0;border-radius:6px;padding:11px 13px;font-size:15px;font-weight:700}
+ header nav{display:none;width:100%;margin:8px 0 0;grid-template-columns:1fr 1fr;gap:0;order:3}
+ header nav.is-open{display:grid}
+ header nav a{font-size:13px;padding:13px 8px}
+ .hero-copy{padding:30px 6% 28px}
+ .hero h1{font-size:clamp(34px,8.5vw,46px);line-height:1.12;letter-spacing:-.7px;margin:13px 0 15px}
+ .hero .kicker{font-size:9px;letter-spacing:1.4px;line-height:1.5}
+ .intro{font-size:14px;line-height:1.55}
+ .actions{margin-top:20px;gap:11px}
+ .actions .btn{padding:13px 15px;font-size:13px}
+ .subtle{font-size:12px}
+ .chips{margin-top:20px;gap:8px 13px}
+ .hero-visual{min-height:235px}
+ .section{padding-top:45px;padding-bottom:45px}
+}
+@media(max-width:380px){.brand{font-size:18px}.mobile-menu-toggle{padding:10px;font-size:13px}.hero h1{font-size:33px}}
