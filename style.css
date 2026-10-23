@@ -30,3 +30,17 @@ img{max-width:100%}
  .section{padding-top:45px;padding-bottom:45px}
 }
 @media(max-width:380px){.brand{font-size:18px}.mobile-menu-toggle{padding:10px;font-size:13px}.hero h1{font-size:33px}}
+
+/* WebÉclat — finition mobile compacte */
+@media(max-width:700px){
+ header{position:relative;min-height:74px;align-items:center}
+ .mobile-menu-toggle{min-height:44px;white-space:nowrap}
+ header nav.is-open{grid-template-columns:repeat(2,minmax(0,1fr));background:#faf9f4}
+ .hero-copy{padding:26px 6% 22px}
+ .hero h1{font-size:clamp(32px,8vw,43px);line-height:1.09;margin:12px 0 13px}
+ .hero .intro{font-size:14px;line-height:1.5}
+ .hero .actions{margin-top:18px;gap:10px}
+ .hero .chips{margin-top:16px}
+ .hero-visual{min-height:260px}
+}
+@media(max-width:380px){.brand{font-size:18px}.mobile-menu-toggle{font-size:13px;padding:10px}}
